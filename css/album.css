@@ -1,0 +1,76 @@
+.album{
+	margin-top: 20px;
+	width: 100%;
+	height: 280px;
+}
+.album_item{
+	width: 220px;
+	height: 280px;
+	display: inline-grid;
+	margin: 0 10px;
+}
+.album_item a{
+	margin: 0!important;
+}
+.album_item p{
+	color: grey
+}
+.play_pic{
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	top: 70px;
+	left: 70px;
+	z-index: 2;
+	opacity:0;
+	transition: 0.3s ease-in-out;
+}
+.enlarge{
+	position: relative;
+	overflow: hidden;
+	width: 220px;
+	height: 220px;
+}
+.zhuanji_pic{
+	width: 220px;
+	height: 220px;
+	transition: 0.3s ease-in-out;
+}
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+	width: 94px;
+	height: 130px;
+	position: absolute;
+	top: 70px;
+	margin: 0!important;
+}
+.L_s{
+	z-index: 2;
+	transition: 0.5s ease-in-out;
+	transform: translateX(-95px);
+	opacity: 0;
+}
+.R_s{
+	z-index: 2;
+	transition: 0.5s ease-in-out;
+	transform: translateX(95px);
+	opacity: 0;
+}
+.L_s:hover, .R_s:hover{
+	opacity: 0.6;
+
+}
+/*指示器*/
+.carousel-indicators{
+	position: absolute;
+	bottom: -30px;
+	margin: 0 auto;
+	width: 50px;
+	z-index: 0;
+}
+.carousel-indicators .active{
+	background-color: rgb(175,175,175);
+}
+.carousel-indicators li{
+	border: 1px solid #ccc;
+}
